@@ -1,0 +1,77 @@
+.novellaContainer {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	.backgroundImage {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.novellaContent {
+		h1 {
+			margin-bottom: 10px;
+			font-size: 30px;
+			font-weight: 500;
+			text-align: justify;
+			padding: 5px 20px;
+		}
+		background: rgba(255, 255, 255, 0.661);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10.1px);
+		text-align: center;
+		border-radius: 10px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		color: black;
+		font-size: 30px;
+		p {
+			font-weight: 500;
+			text-align: justify;
+			padding: 5px 20px;
+		}
+		.choice {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			padding-top: 10px;
+			.novellaChoice {
+				display: flex;
+				flex-direction: row;
+				font-size: 20px;
+				gap: 30px;
+				justify-content: center;
+				button {
+					justify-content: space-around;
+					display: flex;
+					margin-bottom: 10px;
+				}
+			}
+			.showMessage {
+				align-items: center;
+				display: flex;
+				margin-bottom: 10px;
+			}
+		}
+		.buttonsNextPrev {
+			display: flex;
+			flex-direction: row;
+			font-size: 20px;
+			gap: 30px;
+			justify-content: center;
+		}
+	}
+	.video {
+		margin-left: 100px;
+		margin-top: 150px;
+		width: 600px;
+	}
+}
